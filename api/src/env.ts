@@ -232,8 +232,16 @@ const defaults: Record<string, any> = {
 	CACHE_PERMISSIONS: true,
 	CACHE_VALUE_MAX_SIZE: false,
 
-	AUTH_PROVIDERS: '',
-	AUTH_DISABLE_DEFAULT: false,
+	AUTH_PROVIDERS: 'google',
+	AUTH_DISABLE_DEFAULT: true,
+	AUTH_GOOGLE_DRIVER: 'openid',
+	AUTH_GOOGLE_CLIENT_ID: '1008770911129-a68ue6uo80uk031uge0pfnabltmur11u.apps.googleusercontent.com',
+	AUTH_GOOGLE_CLIENT_SECRET: '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',
+	AUTH_GOOGLE_ISSUER_URL: 'https://accounts.google.com',
+	AUTH_GOOGLE_IDENTIFIER_KEY: 'email',
+	AUTH_GOOGLE_ICON: 'google',
+	AUTH_GOOGLE_LABEL: 'Google',
+	AUTH_GOOGLE_ALLOW_PUBLIC_REGISTRATION: 'true',
 
 	EXTENSIONS_PATH: './extensions',
 	EXTENSIONS_AUTO_RELOAD: false,
