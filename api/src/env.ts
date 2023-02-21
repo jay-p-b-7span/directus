@@ -198,9 +198,16 @@ const defaults: Record<string, any> = {
 
 	DB_EXCLUDE_TABLES: 'spatial_ref_sys,sysdiagrams',
 
-	STORAGE_LOCATIONS: 'local',
-	STORAGE_LOCAL_DRIVER: 'local',
-	STORAGE_LOCAL_ROOT: './uploads',
+	// STORAGE_LOCATIONS: 'local',
+	STORAGE_LOCATIONS: 'google',
+
+	// STORAGE_LOCAL_DRIVER: 'local',
+	STORAGE_GCS_DRIVER: 'gcs',
+
+	// STORAGE_LOCAL_ROOT: './uploads',
+	STORAGE_GCS_ROOT: '',
+	STORAGE_GCS_KEY_FILENAME: '',
+	STORAGE_GCS_BUCKET: '',
 
 	RATE_LIMITER_ENABLED: false,
 	RATE_LIMITER_POINTS: 25,
