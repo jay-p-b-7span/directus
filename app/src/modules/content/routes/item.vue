@@ -193,7 +193,8 @@
 			<sidebar-detail icon="info" :title="t('information')" close>
 				<div v-md="t('page_help_collections_item')" class="page-description" />
 			</sidebar-detail>
-			<template v-if="isNew === false && loading === false && internalPrimaryKey">
+			<!-- isNew === false && loading === false && internalPrimaryKey -->
+			<template v-if="true">
 				<revisions-drawer-detail
 					v-if="revisionsAllowed && accountabilityScope === 'all'"
 					ref="revisionsDrawerDetailRef"
@@ -203,7 +204,7 @@
 					@revert="revert"
 				/>
 				<comments-sidebar-detail :collection="collection" :primary-key="internalPrimaryKey" />
-				<shares-sidebar-detail :collection="collection" :primary-key="internalPrimaryKey" :allowed="shareAllowed" />
+				<shares-sidebar-detail :collection="collection" :primary-key="internalPrimaryKey" :allowed="true" />
 				<flow-sidebar-detail
 					location="item"
 					:collection="collection"

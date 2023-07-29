@@ -4,9 +4,9 @@
 		:collection="collection"
 		:initial-values="item"
 		:primary-key="primaryKey"
-		disabled
 		:loading="loading"
 	/>
+	<v-button :loading="saving" @click="save">Submit</v-button>
 </template>
 
 <script setup lang="ts">
@@ -20,5 +20,5 @@ const props = defineProps<{
 
 const { collection, primaryKey } = toRefs(props);
 
-const { edits, item, loading } = useItem(collection, primaryKey);
+const { edits, item, loading, save, saving } = useItem(collection, primaryKey);
 </script>

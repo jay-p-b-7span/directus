@@ -327,6 +327,12 @@ const defaults: Record<string, any> = {
 	PRESSURE_LIMITER_RETRY_AFTER: false,
 
 	FILES_MIME_TYPE_ALLOW_LIST: '*/*',
+	DB_CLIENT:"mysql",
+	DB_HOST:"127.0.0.1",
+	DB_PORT:"8889",
+	DB_DATABASE:"bit-store",
+	DB_PASSWORD:"root",
+	DB_USER:"root"
 };
 
 // Allows us to force certain environment variable into a type, instead of relying
